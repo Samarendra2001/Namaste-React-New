@@ -54,7 +54,7 @@ react.production.js:
     Performance: It is often smaller in file size compared to the development version, and the code is usually minified and optimized for better runtime performance.
     Example CDN Link: https://unpkg.com/react@18/umd/react.production.min.js
 
-8.
+8.What is async and defer?
 
     Ans-:-
 async:
