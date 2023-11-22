@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <h1>Hello World!</h1> hello world using Html-->
+
+    <!-- <script>// this is the hello world program using JavaScript
+            const heading = document.createElement("h1");// this is for creating  h1 tag
+            heading.innerHTML = "Hello World from JavaScript";// this is for creating heading
+
+            const root = document.getElementById("root");//as we have h1 tag and heading So now we have to pass the heading in root ,for this we have to find our root
+            root.appendChild(heading);//this will add our heading in root as a child
+        </script>  -->
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js" 
+    ></script> <!-- It is the CDN links -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" 
+    ></script>
+    <script src="./App.js"></script>
+    <!-- this is Hello world program with react -->
+    
+   <!--  <script>
+        const heading = React.createElement("h1",{},"Hello World From React");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+    </script> -->
+    <!-- 1.in the above code 1st line is fro creating heading tag and passing what we have to give or print
+    2.The second line is basically for creating root where all the react code will run . Everything that we'll render , we'll do it in root. -->
+  </body>
+</html>
