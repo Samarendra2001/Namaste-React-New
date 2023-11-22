@@ -73,4 +73,4 @@ defer:
 
     eg-<script defer src="example.js"></script>
 
-In summary, async allows the script to be executed asynchronously, potentially before the HTML parsing is complete, while defer ensures that the script is executed after the HTML parsing, maintaining order of execution if there are multiple scripts. The choice between them depends on the specific requirements of your scripts and how they interact with the DOM.
+In summary, async allows the script to be executed asynchronously, potentially before the HTML parsing is complete, while defer ensures that the script is executed after the HTML parsing, maintaining order of execution if there are multiple scripts.
