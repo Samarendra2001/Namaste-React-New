@@ -1,0 +1,29 @@
+{
+  "name": "namaste-react-new",
+  "version": "1.0.0",
+  "description": "Namaste-React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samarendra2001/Namaste-React-New.git"
+  },
+  "author": "Sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samarendra2001/Namaste-React-New/issues"
+  },
+  "homepage": "https://github.com/Samarendra2001/Namaste-React-New#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
