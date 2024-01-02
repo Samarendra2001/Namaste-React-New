@@ -4,6 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { RESTRO_API } from "../utils/constant";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [searchText, setSearchText] = useState([]);
@@ -11,6 +12,7 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]); //here we have used empty[] as initial value
   // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
   console.log("Body Rendered");
+  const OnlineStatus=useOnlineStatus();
 
   useEffect(() => {
     fetchData();
@@ -35,6 +37,9 @@ const Body = () => {
   /* if(listofRestaurants.length===0){ Instead of using this we have used conditional rendering
     return <Shimmer/>
   } */
+  if (OnlineStatus===false){
+    return<h1>Looks Like You are Offline !!! Plz Check your Internet Connection</h1>
+  }
   return listofRestaurants.length === 0 ? (
     <Shimmer /> // conditional rendering if restro list==0 then return shimmer else return that
   ) : (
